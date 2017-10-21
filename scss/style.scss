@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.head-left {
+    float: left;
+    width: 335px;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 165px;
+
+    p {
+        font-size: 28px;
+        font-weight: bold;
+        padding: 4px;
+        text-align: center;
+    }
+}
+
+.head-right {
+    float: right;
+    width: 225px;
+    height: 75px;
+    margin-top: 25px;
+    margin-right: 155px;
+    
+
+    span {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    a {
+        display: block;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+        transition: all 1s;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+
+    }
+}
+
+.menu {
+    width: 100%;
+    height: 90px;
+    margin-top: 20px;
+    background-color: #292d30; 
+
+    nav {
+        max-width: 1170px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+
+        ul {
+            display: block;
+            margin: 0 auto;
+
+            li {
+                display: inline-block;
+                line-height: 90px;
+                margin: 0 15px;
+
+                a {
+                    font-size: 30px;
+                    text-decoration: none;
+                    color: rgb(202, 199, 199);
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 81vh;
+    background: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(202, 199, 199);
+
+    .animated {
+        animation-duration: 4s;
+        -webkit-animation-duration: 4s;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 400;
+        padding-top: 230px;
+    }
+
+    h4 {
+        padding: 10px 0;
+        color: white;
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 900px;
+    }
+
+    p {
+        margin: 10px auto 50px;
+        width: 600px;
+        font-size: 24px;
+    }
+
+    .arrow {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 25px;
+            top: 18px;
+        }
+    }
+
+    a {
+        display: block;
+        margin: 20px auto;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        background: #059feb;
+        width: 250px;
+        padding: 8px 10px;
+        border-radius: 50px;
+        transition: 1s; 
+
+        &:hover {
+            background-color: white;
+            color: #059feb;
+        }
+    }
+
+    .mouse {
+        display: block;
+        margin: 120px auto 20px;
+    }
+
+    img {
+        width: 1.5%;
+    }
+    
+}
+
+.services {
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700px;
+        padding-top: 50px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 4px;
+            display: block;
+            top: 100px;
+            right: 50%;
+            transform: translateX(50%);
+            background-color: #059feb;
+        }
+    }
+
+    .service-descr {
+        width: 50%;
+        margin: 30px auto;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .container-fluid {
+        margin: 100px auto;
+
+        .row {
+            .col {
+                margin: 0 15px;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    height: 150px;
+                }
+
+                .title {
+                    width: 80%;
+                    font-size: 24px;
+                    text-align: center;
+                    margin: 20px auto;
+                }
+
+                .descr {
+                    width: 90%;
+                    font-size: 16px;
+                    text-align: center;
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+}
